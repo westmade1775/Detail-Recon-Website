@@ -1,0 +1,12 @@
+document.getElementById("booking-form").addEventListener("submit", function(e) {
+e.preventDefault();
+
+const name = document.getElementById("name").value;
+const service = document.getElementById("service").value;
+const date = document.getElementById("date").value;
+const time = document.getElementById("time").value;
+
+alert(`Thank you, ${name}! Your ${service} appointment is booked for ${date} at ${time}.`);
+
+// Here, you can integrate with Google Calendar, a backend API, or a third-party service for scheduling.
+});
